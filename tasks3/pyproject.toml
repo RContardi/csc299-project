@@ -1,4 +1,8 @@
-[dependency-groups]
-dev = [
-    "pytest>=9.0.0",
-]
+[project]
+name = "tasks3"
+version = "0.1.0"
+description = "PKMS Prototype with Pytest"
+dependencies = []
+
+[tool.uv.dev-dependencies]
+pytest = []

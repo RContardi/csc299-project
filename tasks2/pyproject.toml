@@ -1,0 +1,5 @@
+[project]
+name = "tasks2"
+version = "0.1.0"
+description = "SQLite Task Manager Prototype for Project Milestone"
+dependencies = []
