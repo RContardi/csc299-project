@@ -13,13 +13,13 @@ def summarize_task(client: OpenAI, task_description: str) -> str:
     system_prompt = (
         "You are a professional task summarization agent. "
         "Your only job is to take a long, paragraph-length description "
-        "of a task and summarize it into a short, concise phrase (5-10 words). "
-        "Respond only with the summary, no other text, and no punctuation on the end."
+        "of a task and summarize it into a very short phrase (3-6 words). "
+        "Respond only with the summary, no other text."
     )
     
     try:
         completion = client.chat.completions.create(
-            model="gpt-3.5-turbo", # Recommended fast and cost-effective model
+            model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": task_description}
@@ -69,7 +69,7 @@ def main():
     # 3. Loop through and summarize all descriptions (Project Requirement)
     for i, description in enumerate(task_descriptions, 1):
         summary = summarize_task(client, description)
-        print(f"Task {i} Summary: **{summary}**")
+        print(f"Task {i} Summary: {summary}")
         
     print("\n--- Tasks 4 Experiment Complete ---")
 
