@@ -1,0 +1,16 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Editor/IDE
+.vscode/
+
+# Databases
+*.db
+
+# Python egg/build
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
