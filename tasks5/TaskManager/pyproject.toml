@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "task-manager"
+version = "0.1.0"
+description = "Terminal-based task manager using SQLite"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "TaskManager"}]
+dependencies = []
+
+[project.scripts]
+task-manager = "main:main"
