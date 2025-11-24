@@ -1,1 +1,114 @@
-PLACEHOLDER: Add YouTube video URL demonstrating the tasks5 portion of the project here.
+# tasks5 - Spec-Kit Task Management System Demonstration
+
+## Video Overview
+This video demonstrates the tasks5 project, which showcases GitHub's spec-kit methodology applied to building a task management system.
+
+## Video Content Topics
+
+### 1. Introduction to Spec-Kit (0:00-2:00)
+- What is spec-kit?
+- Why use specification-driven development?
+- Overview of the 6-phase workflow
+
+### 2. Project Structure Tour (2:00-4:00)
+- specs/001-task-manager/ documentation
+- spec.md (requirements and user scenarios)
+- plan.md (technical architecture)
+- data-model.md (database schema)
+- tasks.md (implementation breakdown)
+
+### 3. Spec-Kit Infrastructure (4:00-6:00)
+- .github/agents/ directory (AI agent definitions)
+- .specify/ directory (templates and scripts)
+- constitution.md (development principles)
+- copilot-instructions.md (GitHub Copilot integration)
+
+### 4. Implementation Walkthrough (6:00-10:00)
+- TaskManager/ codebase structure
+- Models layer (task_manager/models.py)
+- Database layer (task_manager/db.py)
+- CLI layer (task_manager/cli.py)
+- Test suite (tests/)
+
+### 5. Traceability Demonstration (10:00-12:00)
+- How requirements trace from spec to code
+- Commit messages referencing FR-XXX
+- Code comments linking to specifications
+- Test cases validating requirements
+
+### 6. Live Demo (12:00-15:00)
+- Installing the task manager
+- Adding tasks with various options
+- Listing and searching tasks
+- Completing tasks
+- GUI launcher demonstration
+
+### 7. Development Workflow (15:00-18:00)
+- Following WORKFLOW.md for new feature
+- Example: Adding task priorities
+- Writing spec → plan → tasks
+- TDD implementation approach
+- Validation against constitution
+
+### 8. Benefits & Lessons Learned (18:00-20:00)
+- Advantages of spec-first development
+- Improved code quality and maintainability
+- Better team communication
+- Challenges and how to overcome them
+
+## Key Demonstration Points
+
+✅ Complete specification suite before implementation
+✅ Modular architecture with clear separation of concerns
+✅ Test-driven development with >80% coverage
+✅ Zero external dependencies (standard library only)
+✅ Comprehensive documentation and traceability
+✅ Constitutional principles enforced throughout
+
+## Commands Demonstrated
+
+```powershell
+# Installation
+cd TaskManager
+python -m pip install -e .
+
+# Basic usage
+task-manager add "Buy groceries" --description "Milk, eggs, bread"
+task-manager list
+task-manager search "groceries"
+task-manager complete 1
+
+# Natural language input
+python say_app.py
+.\say.ps1 put buy milk on my tasks
+
+# Running tests
+python -m unittest discover -v
+
+# Viewing specifications
+cat specs\001-task-manager\spec.md
+cat specs\001-task-manager\plan.md
+```
+
+## Resources Shown
+
+- README.md - Main project documentation
+- WORKFLOW.md - Spec-kit process guide
+- SUMMARY.md - Development retrospective
+- constitution.md - Project principles
+- copilot-instructions.md - AI assistant context
+
+## Video URL
+[INSERT YOUTUBE URL HERE]
+
+## Timestamps
+[To be added after video recording]
+
+## Related Links
+- GitHub Spec-Kit Documentation: [INSERT LINK]
+- Project Repository: [INSERT LINK]
+- Live Demo: [INSERT LINK IF APPLICABLE]
+
+---
+
+**Note**: This file serves as a script/outline for creating demonstration video content.
